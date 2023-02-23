@@ -1,3 +1,130 @@
-.row{
-	padding:5px;
+@font-face {
+    font-family:Gotu;
+    src: url('fonts/Gotu.ttf');
+}
+body{
+		font-family:Gotu;
+		background: #F2F2F2;
+		background-image:opacity('');
+		padding: 0px 10px 10px;
+}
+
+.contrast{
+	color:#FF1493;
+}
+
+.navbar{
+		display:flex;
+		flex-direction:row;
+		justify-content:flex-start;
+		align-items:flex-end;
+}
+ @media screen and (max-width: 769px) {
+            .navbar, .containerBody{
+                flex-direction: column;
+				flex-wrap:wrap;
+				align-items:flex-start;
+            }
+ }
+
+.navItem{padding:0px 10px 0px;
+ }
+
+.containerBody{
+		display:flex;
+		flex-direction:row;
+		margin: 10px;
+}
+
+.fullRow{
+		padding:5px;
+		flex-basis:100%;
+}
+
+.cards{
+		padding:5px 20px 5px;
+		text-align:center;
+		flex-basis:33%;
+		min-width:350px;
+		background-color:#DCF2E6;
+		border-radius:10px;
+		margin:10px;
+		transition: background-color 1.5s ease-out 100ms;
+}
+
+.cards:hover{
+  background-color: #F2DCE8;
+  display:block;
+}
+
+.hoverContent{
+	display: none;
+	padding:5px 20px 5px;
+	flex-basis:33%;
+	background-color:#DCF2E6;
+	border-radius:10px;
+	margin:10px;	
+}
+
+h1{
+	color:#36403A;
+	font-size: 3em;
+}
+h2{
+	color:darkslategrey;
+}
+a:link{color:#36403A;text-decoration:none;}
+/*a:hover{text-decoration:underline;}*/
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #36403A;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+a:visited{color:#36403A;}
+
+.softBorder{
+	border-radius:10px;
+}
+.bubble{
+	border-radius:50%;
+}	
+
+#form{
+	text-align:left!important;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 1;
+  background-color: #36403A;
+  color: white;
+  display:flex;
+  justify-content: right;
+  font-size: 15;
+  height: 26px;
+  line-height: 26px;
+  vertical-align: middle;
+  padding: 5px;
+  margin-bottom:3px;
 }
