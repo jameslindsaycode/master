@@ -9,58 +9,50 @@ body{
 	padding:10px 30px;
 }
 
-.navbar{
+.nav-list{
+  list-style:none;
+  margin:0;
+  padding:0;
 	display:flex;
-	flex-direction:row;
-	justify-content:flex-start;
-	align-items:flex-end;
+  flex-wrap: wrap;
+	/*justify-content:flex-start;
+	align-items:flex-end;*/
 }
-.navItem{
+.nav-item{
   padding:0px 15px 0px 0px;
  }
 
-.containerBody{
-	display:flex;
-	flex-direction:row;
+.grid-container4{
+	display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  gap: 1em;
   margin-bottom:20px;/* spacing container from floating footer*/
 }
 .card{
   padding:10px 20px 10px;
-  margin:0px 10px 10px 0px;
-  flex-grow:1;
-  flex-basis:100%;
+  min-width:300px;;
   background-color: #F2DCE8;
   text-align:left;
   border-radius:10px;
   transition: background-color 1.5s ease-out 100ms;
 }
 
-.grid-container{
+.grid-container3{
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
+  gap:1em;
 }
 .grid-box{
-  padding:0px 10px 0px 0px;
   justify-self:left;
   text-align:center;
 }
 
- @media screen and (max-width:769px) {
+ @media all and (max-width:769px) {
   body{
     font-size: 0.75em;
   }
-  .navbar, .containerBody{
-      flex-direction:column;
-      flex-wrap:wrap;
-      align-items:flex-start;
-  }
-  .card{
-    min-width: 300px;
-    max-width: 300px;
-  }
-
-  .grid-container{
-    grid-template-columns:100%;
+  .grid-container3, .grid-container4{
+    grid-template-columns: 1fr;
   }
  }
 
