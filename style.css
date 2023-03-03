@@ -50,6 +50,10 @@ body{
       flex-wrap:wrap;
       align-items:flex-start;
   }
+  .card{
+    min-width: 340px;
+    max-width: 340px;
+  }
   .grid-container{
     grid-template-columns:100%;
   }
