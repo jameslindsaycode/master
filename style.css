@@ -1,9 +1,8 @@
-@font-face {
-  font-family:Gotu;
-  src: url('fonts/Gotu.ttf');
-}
-body{
-	font-family:Gotu;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+  body{
+	font-family:'Quicksand', sans-serif;
 	background: #F2F2F2;
 	background-image:opacity('');
 	padding:10px 30px;
@@ -15,8 +14,7 @@ body{
   padding:0;
 	display:flex;
   flex-wrap: wrap;
-	/*justify-content:flex-start;
-	align-items:flex-end;*/
+
 }
 .nav-item{
   padding:0px 15px 0px 0px;
@@ -57,7 +55,7 @@ body{
  }
 
 .card:hover{
-  background-color: #DCF2E6;
+  background-color: #ffffff;
   display:block;
 }
 

@@ -39,14 +39,18 @@
 					<h3>&gt Java</h3>
 					<h3>&gt HTML</h3>
 					<h3>&gt CSS</h3>
+					<h3>&gt JavaScript</h3>
 					<h3>&gt SQL</h3>
 					<h3>&gt Powershell</h3>
 					<h3>&gt Quadient Inspire CCM</h3>
 			</div>
 		</div>
-		
 		<div class="footer">
-				© James Lindsay 2022 &nbsp &nbsp
-		</div>					
+				© <span id="year"></span> James Lindsay &nbsp &nbsp
+		</div>
+		<script>
+			document.getElementById("year").innerHTML = new Date().getFullYear();
+		</script>
+
 	</body>
 </html>
