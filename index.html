@@ -7,48 +7,52 @@
 		<meta name="Keywords" content="Full-Stack Developer, James Lindsay, React, CSS, JavaScript, SQL, Java, C#, jQuery, Bootstrap, XML, MySQL, React, Angular, Web Development, Website"/>
 	</head>
 	<body>
-		<ul class="nav-list">
-			<li class="nav-item"><h3><a href="index.html">Home</a><h3></li>
-			<li class="nav-item"><h3><a href="projects.html">Projects</a></h3></li>
-		</ul>	
-		<h1>Hi. My name is James Lindsay.<br>I'm a full-stack software developer.</h1>
-		<img src="images/headshot.jpg" class="bubble">
-		<br>
-		<h1>Read about me...</h1>
-		<h3>I am a Full-stack Developer @ Irish Life - A Financial Services company in Dublin, Ireland. </h3>
-		<div class="container">
-			<div class="card">
-					<h2>Contact</h2>
-					<h3>&gt E-mail: <a href="mailto:j.lindsay82@gmail.com? subject=Software Development Query">j.lindsay82@gmail.com</a></h3>
-					<h3>&gt Phone: +353-86-1569699</h3><p />
-					<a  href="https://ie.linkedin.com/in/james-lindsay-32a53430?trk=profile-badge"><img src="images/linkedin.png" class="softBorder"></a>
-			</div>
-			<div class="card">
-					<h2>What I am doing now</h2>
-					<h3>&gt Full-stack Developer @ Irish Life - Financial Services company in Dublin, Ireland. I develop and maintain the pension member's portal and services.</h3>
-					<h3>&gt Refining my Final Year React project - SongNotes. You can find the latest version hosted <a href="https://songnotes.onrender.com/">here</a>.</h3>
+		<header>
+			<ul class="nav-list">
+				<li class="nav-item"><h3><a href="index.html">Home</a><h3></li>
+				<li class="nav-item"><h3><a href="projects.html">Projects</a></h3></li>
+			</ul>
+		</header>
+		<div class="page-container">
+			<h1>Hi. My name is James Lindsay.<br>I'm a full-stack software developer.</h1>
+			<img src="images/headshot.jpg" class="bubble" alt="james profile picture">
+			<br>
+			<h1>Read about me...</h1>
+			<h3>I am a Full-stack Developer @ Irish Life - A Financial Services company in Dublin, Ireland. </h3>
+			<div class="container">
+				<div class="card">
+						<h2>Contact</h2>
+						<h3>&gt E-mail: <a href="mailto:j.lindsay82@gmail.com? subject=Software Development Query">j.lindsay82@gmail.com</a></h3>
+						<h3>&gt Phone: +353-86-1569699</h3><p />
+						<a  href="https://ie.linkedin.com/in/james-lindsay-32a53430?trk=profile-badge"><img src="images/linkedin.png" class="softBorder"></a>
 				</div>
-			<div class="card">
-					<h2>Qualifications</h2>
-					<h3>&gt 2022-2024: H. Dip. in Science in Computing</h3>			
-					<h3>&gt 2004-2006: BTEC Higher Nat. Dip. Music Technology</h3>
-					<h3>&gt 2001-2003: Nat. Cert. Audio Visual Media Technology</h3>
-					<h3>&gt 1995-2001: Leaving Certificate</h3>
+				<div class="card">
+						<h2>What I am doing now</h2>
+						<h3>&gt Full-stack Developer @ Irish Life - Financial Services company in Dublin, Ireland. I develop and maintain the pension member's portal and services.</h3>
+						<h3>&gt Refining my Final Year React project - SongNotes. You can find the latest version hosted <a href="https://songnotes.onrender.com/" target="_blank">here</a>.</h3>
+					</div>
+				<div class="card">
+						<h2>Qualifications</h2>
+						<h3>&gt 2022-2024: H. Dip. in Science in Computing</h3>			
+						<h3>&gt 2004-2006: BTEC Higher Nat. Dip. Music Technology</h3>
+						<h3>&gt 2001-2003: Nat. Cert. Audio Visual Media Technology</h3>
+						<h3>&gt 1995-2001: Leaving Certificate</h3>
+				</div>
+				<div class="card">
+						<h2>Skills</h2>
+						<h3>&gt React</h3>
+						<h3>&gt JavaScript</h3>
+						<h3>&gt CSS</h3>
+						<h3>&gt HTML</h3>
+						<h3>&gt Java</h3>
+						<h3>&gt Spring MVC / Spring Boot</h3>
+						<h3>&gt Node / Express JS</h3>
+						<h3>&gt SQL</h3>
+				</div>
 			</div>
-			<div class="card">
-					<h2>Skills</h2>
-					<h3>&gt React</h3>
-					<h3>&gt JavaScript</h3>
-					<h3>&gt CSS</h3>
-					<h3>&gt HTML</h3>
-					<h3>&gt Java</h3>
-					<h3>&gt Spring MVC / Spring Boot</h3>
-					<h3>&gt Node / Express JS</h3>
-					<h3>&gt SQL</h3>
+			<div class="footer">
+					© <span id="year"></span> James Lindsay &nbsp &nbsp
 			</div>
-		</div>
-		<div class="footer">
-				© <span id="year"></span> James Lindsay &nbsp &nbsp
 		</div>
 		<script>
 			document.getElementById("year").innerHTML = new Date().getFullYear();
